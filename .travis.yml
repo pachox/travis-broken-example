@@ -4,6 +4,8 @@ php:
   - 5.4
   - hhvm
 script: phpunit Test.php
+after_success:
+  - bash deploy.sh
 deploy:
   provider: releases
   api_key: "82a7395c4ee4b6187da65a44053ae2d06951b599"
