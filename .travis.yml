@@ -6,7 +6,7 @@ php:
 script: phpunit Test.php
 deploy:
   provider: releases
-  api_key: "bae6f6188af9f0cdfd3072b5c97f5b6f97c1be98"
+  api_key: "82a7395c4ee4b6187da65a44053ae2d06951b599"
   file: "travis-broken.tgz"
   skip_cleanup: true
   overwrite: true
