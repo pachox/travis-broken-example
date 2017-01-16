@@ -1,16 +1,13 @@
 language: php
 php:
-  - 5.5
-  - 5.4
-  - hhvm
+- 5.5
+- 5.4
+- hhvm
 script: phpunit Test.php
 after_success:
-  - bash deploy.sh
+- bash deploy.sh
 deploy:
   provider: releases
-  api_key: "82a7395c4ee4b6187da65a44053ae2d06951b599"
-  file: "travis-broken.tgz"
-  skip_cleanup: true
-  overwrite: true
-  on:
-    tags: true
+  api_key:
+    secure: gyr2OPlkwfxK/L7JVhX+QcMGPVlehXarE41mkr6DJzpzUFvD1CzyQ/1xy0lXcItO3mdRR2nOI8SqOmJJFtwz//Tv9u2+752l0tB9zuBWyCG0rckGWNgJTNcXzSnwa8/l+W5vt3AjCmxH2Ld8cfG7yR4L+6rRE1tqfqOYiviqUtvs44N27nkij6/klx0c0eBXfYjNs+9TemWLHDpVnQexDvXLHCpOmNFGAJGR7pwG0i3IHlYhwzL61iQ3LNX6gJ1/ptY2X+4TCA1l2zJI7P4BLk/RSzLCBvASzgOzoX8Txh70XnPxema6pO4rrvfKWG3hPIYyfC1aO+ikaV+RayNPyiQGCiiXmPiclYmD+bq4hC3pxWcH6yPFRH4NWewoKoeyReQeg0C8o+cQo4Mu5/EAg/iIbjngglMHLYW8w56+sw51EFcR6HHaFYG0f2S3PUCV5adA1uU34+HwDWvbw2HSZ9sb/TvTIPhUonsDSvJlRxmGV9Shpm/zs+rsKMJkguoDl9a+tW65XiuxklkunJIhsDJAxuB0PPUcXzqfNEV7ZjUZRkv1ZKBfGBl/bq+ND2VUH34J00MImzu2bfAifejc4BSlWIkba4kCuKzy6WuCFfTw2r3kQLy7NMtAJwZTSnoqOuI4If4Hx0AgTSxAY2hRANYL+d9vCAVuBEgrWqBMWec=
+  file: aaa.tgz
